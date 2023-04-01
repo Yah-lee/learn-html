@@ -1,0 +1,56 @@
+.bor{
+    display: flex;
+    width: 1400px;
+    height: 400px;
+    background-color: rgba(255, 156, 123, 0.5);
+    margin: auto;
+    margin-top: 100px;
+    gap: 50px;
+}
+.tom img {
+    width: 400px;
+    position: relative;
+    top: -90px;
+    left: 50px;
+    animation: tom 1s ease-in-out;
+}
+.information{
+    left: 100px;
+}
+.information h1 {
+    width: ;
+    white-space: nowrap;
+    overflow: hidden;
+    background: linear-gradient( 90deg, #95b4ab 10%, #8136d4 40%, #9881e6 60%, #95b4ab 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 1s ease-in-out;
+}
+@keyframes move {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+@keyframes tom {
+    0%{
+        transform: scale(0.5);
+        transform: translateX(10px);
+        width: 10%;
+    }
+    50%{
+        transform: translateX(200px);
+        width: 50%;
+    }
+    90%{
+        transform: translateX(-500px);
+        width: 400px;
+    }
+    100%{
+        transform:translate3d(100px) ;
+    }
+}
